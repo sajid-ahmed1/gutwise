@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Header */}
       <header className="p-6 border-b shadow-sm flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Image src="/gutwise-logo.svg" alt="GutWise Logo" width={32} height={32} />
+          <Image src="/gutwise-logo.png" alt="GutWise Logo" width={32} height={32} />
           <h1 className="text-2xl font-bold">GutWise</h1>
         </div>
         <nav className="space-x-6 text-sm font-medium">
