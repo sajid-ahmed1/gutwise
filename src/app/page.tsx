@@ -11,13 +11,13 @@ export default function HomePage() {
       <h1 className="text-4xl font-bold mb-2">GutWise</h1>
 
       {/* Tagline */}
-      <p className="text-center text-lg max-w-xl mb-4 text-gray-600">
-        Taking the guesswork out of gut health so you can focus on feeling better, not figuring it out.
+      <p className="text-centre text-lg max-w-xl mb-4 text-gray-600">
+        Taking the guesswork out of gut health so you can spend more time healing and less time stressing.
       </p>
 
       {/* Account benefit explanation */}
-      <p className="text-center text-base max-w-md mb-6 text-gray-500">
-        We ask you to create an account so we can personalize your GutWise journey—customized recipes, food alternatives, and health tips tailored just for your gut and condition.
+      <p className="text-centre text-base max-w-md mb-6 text-gray-500">
+        We ask you to create an account so we can personalise your GutWise experience—tailored recipes, food swaps, and health insights made just for your gut.
       </p>
 
       {/* Call to Action */}
@@ -25,7 +25,7 @@ export default function HomePage() {
         href="/signup"
         className="px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition"
       >
-        Create Your Account
+        Curate Your Account
       </a>
     </main>
   );
