@@ -11,8 +11,13 @@ export default function HomePage() {
       <h1 className="text-4xl font-bold mb-2">GutWise</h1>
 
       {/* Tagline */}
-      <p className="text-center text-lg max-w-xl mb-8 text-gray-600">
+      <p className="text-center text-lg max-w-xl mb-4 text-gray-600">
         Taking the guesswork out of gut health so you can focus on feeling better, not figuring it out.
+      </p>
+
+      {/* Account benefit explanation */}
+      <p className="text-center text-base max-w-md mb-6 text-gray-500">
+        We ask you to create an account so we can personalize your GutWise journey—customized recipes, food alternatives, and health tips tailored just for your gut and condition.
       </p>
 
       {/* Call to Action */}
