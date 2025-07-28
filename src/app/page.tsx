@@ -1,51 +1,27 @@
-// Homepage layout for GutWise
+// GutWise onboarding landing page
 // File: src/app/page.tsx
-
-import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-gray-800">
-      {/* Header */}
-      <header className="p-6 border-b shadow-sm flex justify-between items-center">
-        <div className="flex items-center space-x-2">
-          <Image src="/gutwise-logo.png" alt="GutWise Logo" width={32} height={32} />
-          <h1 className="text-2xl font-bold">GutWise</h1>
-        </div>
-        <nav className="space-x-6 text-sm font-medium">
-          <a href="#" className="hover:text-blue-600">Recipes</a>
-          <a href="#" className="hover:text-blue-600">Health</a>
-          <a href="#" className="hover:text-blue-600">My Account</a>
-        </nav>
-      </header>
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-blue-50 text-gray-800 p-6">
+      {/* Logo */}
+      <img src="/gutwise-logo.png" alt="GutWise Logo" className="w-20 h-20 mb-4" />
 
-      {/* Hero Section */}
-      <section className="p-6 text-center bg-blue-50">
-        <h2 className="text-3xl font-semibold mb-2">Feel Better, Eat Smarter</h2>
-        <p className="text-gray-600 max-w-xl mx-auto">
-          GutWise helps you discover gut-friendly meals, track food reactions, and take control of your digestive health.
-        </p>
-      </section>
+      {/* Title */}
+      <h1 className="text-4xl font-bold mb-2">GutWise</h1>
 
-      {/* Editor&apos;s Choice Section */}
-      <section className="p-6">
-        <h2 className="text-xl font-semibold mb-4">Editor&apos;s Choice</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Recipe cards go here */}
-          <div className="p-4 border rounded-lg shadow-sm">
-            <h3 className="font-bold text-lg">Low-FODMAP Quinoa Bowl</h3>
-            <p className="text-sm text-gray-600 mt-2">Soothing, nourishing, and gut-friendly.</p>
-          </div>
-          <div className="p-4 border rounded-lg shadow-sm">
-            <h3 className="font-bold text-lg">Bone Broth Soup</h3>
-            <p className="text-sm text-gray-600 mt-2">Easy on digestion, rich in nutrients.</p>
-          </div>
-          <div className="p-4 border rounded-lg shadow-sm">
-            <h3 className="font-bold text-lg">Ginger Carrot Puree</h3>
-            <p className="text-sm text-gray-600 mt-2">Anti-inflammatory and gentle on the gut.</p>
-          </div>
-        </div>
-      </section>
+      {/* Tagline */}
+      <p className="text-center text-lg max-w-xl mb-8 text-gray-600">
+        Taking the guesswork out of gut health so you can focus on feeling better, not figuring it out.
+      </p>
+
+      {/* Call to Action */}
+      <a
+        href="/signup"
+        className="px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition"
+      >
+        Create Your Account
+      </a>
     </main>
   );
 }
